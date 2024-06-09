@@ -32,7 +32,10 @@ const config: Config = {
           sm: '12px',
           md: '14px',
           lg: '16px',
-      }
+      },
+      fontFamily: {
+        sans: ['Tiny5', 'sans-serif'], // Add Lato as the first font in the sans-serif stack
+      },
     },
   },
   plugins: [],

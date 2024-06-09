@@ -1,11 +1,10 @@
 "use client"
 import Image from "next/image";
-import { useState } from "react";
 import ButtonChat from "./component/buttonChat";
 import ButtonTask from "./component/buttonTask";
 import PopUpChat from "./component/chat/popUp";
-import PopUpTask from "./component/task/popUp";
 import useActionMenu from "./component/hooks/actionMenus";
+import PopUpTask from "./component/task/popUp";
 
 export default function Home() {
   const { action, setAction} = useActionMenu()
@@ -15,7 +14,7 @@ export default function Home() {
   const openTask = () => setAction("task")
 
   return (
-    <main className="min-h-screen w-screen p-6 text-md">
+    <main className="min-h-screen w-screen p-6 text-md font-sans">
       <div className="flex gap-6 items-end justify-end flex-col absolute end-6 bottom-6">
 
         <div className={action === "chat" ? "" : "hidden"}>
